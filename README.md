@@ -152,7 +152,7 @@ factory:Taganrog_icecream_factory geo:location geoplace:Taganrog .
 
 ## Built-ins
 
-Shorthand, frequently used predicates and objects, like `rdfs:subClassOf` or `rdfs:range`
+Shorthand, frequently used predicates and classes, like `rdfs:subClassOf` or `rdfs:range`
 
 **Tabtree source**
 ```
@@ -184,7 +184,7 @@ Shorthand, frequently used predicates and objects, like `rdfs:subClassOf` or `rd
 
 ### Table of special classes
 
-These classes are not compiled to something different, and need to be declared together with other resources, but in addition transpiler can use their names to define the type of object at compilation.
+These classes are not compiled to something different, and needed to be declared together with other resources, but in addition, transpiler uses their names to define the type of object at compilation.
 
 | Tabtree class | Corresponds to |
 | :---:   | :---: |
