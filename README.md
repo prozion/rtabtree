@@ -119,8 +119,40 @@ cities +a:UrbanPlace
 :Microdistrict_14 rdf:type :UrbanPlace .
 ```
 
+## Tabtree file sections
+
+- namespaces
+- classes
+- properties
+- individuals
+
+## Namespaces
+
+**Tabtree source**
+<!-- ```tabtree
+namespaces
+  factory ns:http://example.org/namespaces/factory#
+  geoplace ns:http://example.org/namespaces/geoplace#
+  geo ns:http://www.w3.org/2003/01/geo/wgs84_pos#
+individuals
+  factory/Taganrog_icecream_factory geo/location:geoplace/Taganrog
+``` -->
+
+!["**Tabtree source**"](docs/images/p1.png?raw=true "Title")
+
+**Turtle result**
+```
+@prefix :factory <http://example.org/namespaces/factory#> .
+@prefix :geoplace <http://example.org/namespaces/geoplace#> .
+@prefix :geo <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+factory:Taganrog_icecream_factory geo:location geoplace:Taganrog .
+
+```
 
 ## Built-ins
+
+Shorthand, frequently used predicates and objects, like
 
 **Tabtree source**
 ```
