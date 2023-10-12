@@ -2,7 +2,7 @@
 
 Tabtree &mdash; is a compact format to write RDF triples. It uses some syntactic sugar to make a work of editing ontologies in the code editor as easy as possible.
 
-## Tabs define a level of hierarchy
+## Tabs define a level in a hierarchy
 
 **Tabtree source**
 ```tabtree
@@ -138,7 +138,7 @@ individuals
   factory/Taganrog_icecream_factory geo/location:geoplace/Taganrog
 ``` -->
 
-!["**Tabtree source**"](docs/images/p1.png?raw=true "Title")
+!["**Tabtree source**"](docs/images/p1.png?raw=true "Namespaces example")
 
 **Turtle result**
 ```
@@ -152,7 +152,7 @@ factory:Taganrog_icecream_factory geo:location geoplace:Taganrog .
 
 ## Built-ins
 
-Shorthand, frequently used predicates and objects, like
+Shorthand, frequently used predicates and objects, like `rdfs:subClassOf` or `rdfs:range`
 
 **Tabtree source**
 ```
@@ -163,3 +163,37 @@ Shorthand, frequently used predicates and objects, like
 ```
   :City rdfs:subClassOf :UrbanPlace .
 ```
+
+### Table of predicate built-ins
+
+| Tabtree shorthand | Compiles to RDF Turtle |
+| :---:   | :---: |
+| a | rdf:type |
+| instance-of | rdf/type |
+| subclass-of | rdfs/subClassOf |
+| subproperty-of | rdfs/subPropertyOf |
+| alt | owl/sameAs |
+| eq | owl/sameAs |
+| eq-class | owl/equivalentClass |
+| eq-property | owl/equivalentProperty |
+| domain | rdfs/domain |
+| range | rdfs/range |
+| d | rdfs/comment |
+| name | rdfs/label |
+| disjoint-with | owl/disjointWith |
+
+### Table of special classes
+
+These classes are not compiled to something different, and need to be declared together with other resources, but in addition transpiler can use their names to define the type of object at compilation.
+
+| Tabtree class | Corresponds to |
+| :---:   | :---: |
+| Year | rdfs:Literal |
+| Date | xsd:date |
+| String | xsd:string |
+| Double | xsd:double |
+| Float | xsd:float |
+| Decimal | xsd:decimal |
+| PositiveInteger | xsd:positiveInteger |
+| Integer | xsd:integer |
+| Boolean | xsd:boolean |
