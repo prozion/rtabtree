@@ -6,6 +6,8 @@ Tabtree &mdash; is a compact format to write RDF triples. It uses some syntactic
 
 ## Tabs define a level in a hierarchy
 
+(The principle similar to Python)
+
 **Tabtree source**
 ```tabtree
 Africa
@@ -29,7 +31,7 @@ Europe
 
 Big ontologies and knowledge graphs is good to divide into several files, regarding the regions of internal cohesion. And then combine them into one resulting Turtle file, ready for uploading to appropriate semtech application.
 
-Here is an example of pasting contents of `factories.tree` into 'central' file called `main.tree`
+Here is an example of pasting `factories.tree` contents into the 'central' file called `main.tree`
 
 **Tabtree source**
 ```tabtree
