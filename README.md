@@ -1,3 +1,5 @@
+N.B.: This is a "sketch of a sketch" for README, the working lib for Tabtree is currently implemented [in Racket language](https://github.com/prozion/tabtree-racket). Transition to R implementation of this library is under way.
+
 # Tabtree
 
 Tabtree &mdash; is a compact format to write RDF triples. It uses some syntactic sugar to make a work of editing ontologies in the code editor as easy as possible.
