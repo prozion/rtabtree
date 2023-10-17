@@ -6,7 +6,7 @@ cities a:owl/Ontology
 		twin
 		year range:Year
 		phrase range:rdfs/Literal
-	individuals
+	individuals +a:City
 		Москва alt:Moscow twin:Бейрут,Белград,Берлин year:1147 phrase:"Москва не сразу строилась"
 		Бологое phrase:`Бологое - это где-то между Ленинградом и Москвой`
 		Санкт-Петербург alt:Петроград,Ленинград year:1703 phrase:"В Питере - пить!"
