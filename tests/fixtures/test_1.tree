@@ -1,0 +1,9 @@
+cities
+	Moscow alt:Москва twin:Beijing,Belgrade,Berlin year:1147 phrase:"Москва не сразу строилась"
+		Zelenograd
+		Belyaevo
+			Grasshopper
+	Saint-Petersburg alt:Petrograd,Leningrad year:1703 phrase:"В Питере - пить!"
+	; comment
+	Berlin d:"The capital of Germany" year:1237
+		Grasshopper

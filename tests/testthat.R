@@ -1,5 +1,4 @@
 library(testthat)
+library(rtabtree)
 
-# test_check("rtabtree")
-
-usethis::use_test("hash")
+test_check("rtabtree")

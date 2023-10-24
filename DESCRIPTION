@@ -1,0 +1,18 @@
+Package: rtabtree
+Type: Package
+Title: RTabtree package
+Version: 0.0
+Authors@R: c(
+  person(given = "Denis", family = "Shirshov", email="denis.shirshov@gmail.com", role = c("cre", "aut"), comment = c(ORCID = "0009-0006-1868-4887")))
+Description: A package for Tabtree format
+License: MIT + file LICENSE
+Encoding: UTF-8
+URL: https://github.com/prozion/rtabtree
+BugReports: https://github.com/prozion/rtabtree/issues
+Roxygen: list(markdown = T)
+RoxygenNote: 7.2.3
+Suggests:
+  testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports:
+  r2r
